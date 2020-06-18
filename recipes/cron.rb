@@ -1,11 +1,4 @@
 template '/usr/local/sbin/certbot-renew.sh' do
-  variables(
-    lazy { 
-      {
-        services: node['certbot']['renew_post_services']
-      }
-    }
-  )
   mode 0755
 end
 
